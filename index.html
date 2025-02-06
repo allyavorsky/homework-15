@@ -11,42 +11,134 @@
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
     rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="text-slate-600">
+<body style="font-family: 'Bricolage Grotesque';" class="text-slate-600 bg-gray-50">
 
-  <header class="h-[120px]">
-    <div class="container max-w-[1280px] mx-auto h-full flex items-center justify-between">
+  <header class="h-[96px] px-6 md:px-8">
+    <div class="max-w-6xl mx-auto h-full flex items-center justify-between">
 
       <a href="index.html">
-        <img class="h-12 rounded" src="./assets/images/logo.webp" alt="Hillel Logo" loading="lazy">
+        <img class="h-10 rounded" src="./assets/images/logo.webp" alt="Hillel Logo" loading="lazy">
       </a>
 
-      <nav class="flex space-x-2">
+      <nav class="hidden md:flex space-x-6">
         <a class="px-4 py-2 hover:text-black transition" href="#">Home</a>
         <a class="px-4 py-2 hover:text-black transition" href="#">About</a>
         <a class="px-4 py-2 hover:text-black transition" href="#">Mission</a>
-        <a class="px-4 py-2 hover:text-black transition" href="#">Vision</a>
         <a class="px-4 py-2 hover:text-black transition" href="#">Blog</a>
         <a class="px-4 py-2 hover:text-black transition" href="#">Contact</a>
       </nav>
 
       <div class="flex items-center space-x-2">
-        <a class="px-8 py-2 rounded" href="#">Log in</a>
-        <a class="px-8 py-2 rounded bg-black text-white" href="#">Sign in</a>
+        <a class="px-2 py-2 border-2 border-transparent text-black rounded-lg hover:bg-black hover:text-white transition"
+          href="#">Log in</a>
+        <a class="px-5 py-2 border-2 border-transparent rounded-lg bg-black text-white hover:bg-gray-800 transition"
+          href="#">Sign in</a>
       </div>
 
     </div>
   </header>
 
-  <main>
+  <main class="px-6 md:px-8">
+
+    <section class="md:py-20 py-10">
+      <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 border-b-2 border-gray-200 items-center">
+        <div class="flex flex-col gap-8">
+          <h1 class="text-black font-bold md:text-6xl text-4xl">Programming courses</h1>
+          <p class="leading-relaxed">
+            Get programming skills and start your career in IT.
+            Your training will be conducted only with best practices.
+          </p>
+
+          <div class="flex space-x-4">
+            <a class="px-5 py-2 border-2 border-black text-black rounded-lg hover:bg-black hover:text-white transition"
+              href="#">Download App</a>
+            <a class="px-5 py-2 border-2 border-transparent rounded-lg bg-black text-white hover:bg-gray-800 transition"
+              href="#">Register Now</a>
+          </div>
+        </div>
+
+        <div class="flex justify-center">
+          <picture>
+            <img class="max-w-xs sm:max-w-sm md:max-w-md" src="./assets/images/image.png" alt="Spacer Image">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <section class="md:py-20 py-10">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-black font-bold md:text-6xl text-4xl">Full-Stack Developer Profession</h2>
+        <p class="mt-6 max-w-2xl mx-auto leading-relaxed">
+          In Full Stack courses, you will be able to quickly master JavaScript development
+          skills on both the client and server sides.
+        </p>
+
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-12 mt-12">
+          <div class="p-8 shadow-lg rounded-xl bg-white">
+            <h3 class="font-semibold text-black text-xl">Become a Programmer</h3>
+            <p class="text-slate-500 mt-3 leading-relaxed">
+              Programming is a promising profession that opens up many opportunities.
+            </p>
+          </div>
+
+          <div class="p-8 shadow-lg rounded-xl bg-white">
+            <h3 class="font-semibold text-black text-xl">High Salary</h3>
+            <p class="text-slate-500 mt-3 leading-relaxed">
+              According to rabota.ua, IT specialists' salaries are among the highest.
+            </p>
+          </div>
+
+          <div class="p-8 shadow-lg rounded-xl bg-white">
+            <h3 class="font-semibold text-black text-xl">Stable Income</h3>
+            <p class="text-slate-500 mt-3 leading-relaxed">
+              Programmers' salaries are indexed according to exchange rates, ensuring financial stability.
+            </p>
+          </div>
+
+          <div class="p-8 shadow-lg rounded-xl bg-white">
+            <h3 class="font-semibold text-black text-xl">Ability to Plan Your Life</h3>
+            <p class="text-slate-500 mt-3 leading-relaxed">
+              The IT industry is growing rapidly, providing stable employment opportunities.
+            </p>
+          </div>
+
+          <div class="p-8 shadow-lg rounded-xl bg-white">
+            <h3 class="font-semibold text-black text-xl">Global Job Market</h3>
+            <p class="text-slate-500 mt-3 leading-relaxed">
+              Programmers can work from anywhere in the world, either remotely or in an office.
+            </p>
+          </div>
+
+          <div class="p-8 shadow-lg rounded-xl bg-white">
+            <h3 class="font-semibold text-black text-xl">Career & Personal Growth</h3>
+            <p class="text-slate-500 mt-3 leading-relaxed">
+              Programming allows for career growth and creative self-expression.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="bg-black md:my-20 my-10 p-12 mx-auto max-w-4xl rounded-xl flex flex-col items-center text-center text-white">
+      <div class="flex flex-col gap-2 mb-8">
+        <h2 class="font-bold md:text-6xl text-4xl">Install Mobile App</h2>
+        <p class="">Notifications, messages, and full access to the LMS.</p>
+      </div>
+
+      <div class="flex space-x-4">
+        <a class="px-5 py-2 border-2 border-white text-white rounded-lg hover:bg-black hover:text-white transition"
+          href="#">Download App</a>
+      </div>
+    </section>
 
   </main>
 
-  <footer>
-
+  <footer class="py-10 text-center text-sm text-slate-500">
+    <p>Copyright © 2025 Hillel. All rights reserved.</p>
   </footer>
 
 </body>
